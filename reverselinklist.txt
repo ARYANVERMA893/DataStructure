@@ -1,0 +1,11 @@
+reverse a singli link list
+
+pointer" refers to variables that will hold references to nodes in a linked list.
+
+Initialize Pointers: Create three pointers - prev, current, and next. Initialize prev to None, current to the head of the linked list, and next to None.
+
+Iterate Through the List: Use a while loop to iterate through the list until the current pointer reaches the end (i.e., becomes None).
+
+Update Pointers: Inside the loop, update the next pointer to the next node in the list. Then, change the next pointer of the current node to point to the prev node, effectively reversing the direction of the pointer. Move the prev and current pointers one step forward in the list.
+
+Update Head: After the loop, update the head of the linked list to be the last node encountered, which is now at the prev pointer.
